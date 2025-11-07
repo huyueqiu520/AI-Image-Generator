@@ -1,0 +1,38 @@
+重要提醒：API密钥配置说明
+========================
+
+在使用本工具之前，请务必配置您的API密钥！
+
+支持的API提供商：
+1. OpenAI (默认支持)
+2. 百度AI
+3. 阿里云
+4. 腾讯云
+
+配置方法（按优先级）：
+1. 环境变量方式：
+   - Windows: set OPENAI_API_KEY=your_api_key_here
+   - Linux/Mac: export OPENAI_API_KEY=your_api_key_here
+
+2. 配置文件方式：
+   - 编辑 config.json 文件，填入您的API密钥
+   - 示例：
+     {
+       "api_key": "your_openai_api_key_here",
+       "provider": "openai"  // 可选: openai, baidu, aliyun, tencent
+     }
+
+3. 首次运行时手动输入：
+   - 程序会提示您输入API密钥
+   - 可选择保存到配置文件以便下次使用
+
+获取API密钥的方法：
+- OpenAI: https://platform.openai.com/api-keys
+- 百度AI: https://console.bce.baidu.com/ai/
+- 阿里云: https://help.aliyun.com/product/150434.html
+- 腾讯云: https://cloud.tencent.com/product/tiia
+
+安全提醒：
+- 请妥善保管您的API密钥
+- 不要在公开代码中暴露密钥
+- 定期检查API使用情况和账单
